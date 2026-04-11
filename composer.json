@@ -1,0 +1,40 @@
+{
+    "name": "prototype-in/rbac",
+    "description": "RBAC based on ACL mapped rolez disarray.",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "3.x-dev",
+	"prototype-in/acl": "dev-develop"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "13.2.x-dev",
+        "mockery/mockery": "2.0.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PrototypeIn\\Rbac\\": "src/"
+        }
+    },
+    "scripts": {
+	"test": "vendor/bin/phpunit tests"
+    },
+    "repositories": [
+	{
+	    "type": "vcs",
+	    "url": "https://gitlab.com/prototype.in/acl.git"
+	}
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "PrototypeIn\\Rbac\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Povilas Brilius",
+            "email": "p30311619@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
